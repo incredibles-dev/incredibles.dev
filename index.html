@@ -63,10 +63,56 @@
       letter-spacing: 0.1em;
       text-transform: uppercase;
     }
+
+    .social {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate3d(-50%, calc( -50% + 7.5rem ), 0);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
+    }
+
+    .social a {
+      transition: opacity 0.1s linear;
+    }
+
+    .social a:hover {
+      opacity: 0.75;
+    }
+
+    .social img {
+      display: block;
+      margin: 0 10px;
+      width: 20px;
+      height: 20px;
+    }
   </style>
   <body>
-    <img src="/static/incredibles-logo.png" alt="incredibles" with="400" height="60" />
+    <h1>
+      <img src="/static/incredibles-logo.png" alt="incredibles" with="400" height="60" />
+    </h1>
 
     <span>Coming soon.</span>
+
+    <ul class="social">
+      <li>
+        <a href="https://twitter.com/incredibles_dev" target="_blank">
+          <img src="/static/icon-twitter.svg" alt="Twitter" width="20" height="20" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/incredibles-dev/" target="_blank">
+          <img src="/static/icon-linkedin.svg" alt="LinkedIn" width="20" height="20" />
+        </a>
+      </li>
+    </ul><!-- .social -->
   </body>
 </html>
